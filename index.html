@@ -3,11 +3,222 @@
     <head>
         <meta charset = "UTF-8">
         <meta http-equiv="X-UA-Compatible" content ="IE=edge">
-        <meta name="viewport" content="widht=deviece-width, initial-scale =1.0">
+        <meta name="viewport" content="width=device-width, initial-scale =1.0">
         <title>CBN, Nicholas Matias</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Logo.png" class = "logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark mobile" onclick="closemenu()"></i>
 
+                    </ul>
+                    <i class="fa-solid fa-bars mobile" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm Nicholas Matias!</h1>
+                    <p>Aspiring Software Engineer</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------about--------->
+
+        <div id="about">
+            <div class="container">
+                <div class ="row">
+                    <div class="about-col-1">
+                        <img src="Images/Rectangle_Headshot.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class ="sub-title">About Me</h1>
+                        <p>
+                            I’m a sophomore at Texas A&M University studying computer science.  I love all things programming related and I am constantly trying to expand my knowledge. I’m especially passionate about AI/ machine learning and their future applications. Lastly, I aspire to be a software engineer that makes a positive impact on the world through innovative solutions. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class ="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class ="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class ="tab-links" onclick="opentab('Education')">Education</p>
+                            <p class ="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Front-End</span><br>HTML, CSS, and JavaScript</li>
+                                <li><span>Back-End</span><br>Python, C++ and Java</li>
+                                <li><span>Libraries</span><br>PyTorch, TensorFlow, Keras, Matplotlib, Pandas, and Numpy</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>June 2023 - August 2023</span><br>IT Intern, Lavner Education, Rice University</li>
+                                <li><span>Incoming Summer 2024</span><br>Meta University Engineering Intern</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Texas A&M University, College Station, TX &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;May 2026</span>  <br>Bachelor of Science in Computer Science</li>
+                                <li><span>Bridgeland High School, Cypress, TX&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;May 2022</span><br>High School Diploma</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="tab-contents" id="Hobbies">
+                            <ul>
+                                <li>- Watching/ playing soccer, basketball, and football</li>
+                                <li>- Running, weightlifting, and calisthenics</li>
+                                <li>- Chess and origami</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<!---------portfolio--------->
+        <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class ="work-list">
+                    <div class ="work">
+                        <img src="ProjectThumbnails/Project1.png">
+                        <div class="layer">
+                            <h3>LSTM Stock Forecasting</h3>
+                            <p>Created a model capable of effectively forecasting and comparing the performance of economic sectors 
+                                between countries using their stock indexes.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>
+                    <div class ="work">
+                        <img src="ProjectThumbnails/Project2.png">
+                        <div class="layer">
+                            <h3>AI for Resume Enhancement</h3>
+                            <p>Used supervised machine learning to train the model. Created stemming function which used tokenization, 
+                                term frequency, inverse document frequency, and TF-IDF multiplication to reprocess the resume.
+                                </p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>                 
+                </div>
+
+
+                <div class ="work-list">
+                    <div class ="work">
+                        <img src="ProjectThumbnails/Project3.png">
+                        <div class="layer">
+                            <h3>Original Website</h3>
+                            <p>Learned basics of HTML and CSS to create the first version of my personal portfolio website. </p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>
+                    <div class ="work">
+                        <img src="ProjectThumbnails/Project4.png">
+                        <div class="layer">
+                            <h3>Pong Game</h3>
+                            <p>Used object-oriented programming, the pygame library and a top-down approach throughout development to 
+                                create a two-player version of the game pong.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>                 
+                </div>
+                <!--<a href="#" class = "button">See More</a>-->
+            </div>
+        </div>
+
+
+
+
+        <!--        Contact        -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <a href="mailto:n-r-matias@outlook.com" title="Email Nicholas Matias" rel="noreferrer noopener"><i class="fa-solid fa-paper-plane"></i> n-r-matias@outlook.com</a></p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/nicholasmatias" target="_blank" title="Nicholas Matias' LinkedIn" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/NicholasMatias" target="_blank" title="Nicholas Matias' GitHub" rel="noreferrer noopener"><i class="fa-brands fa-github" ></i></a>
+                            <a href="https://www.instagram.com/nicholasrmatias" target="_blank" title="Nicholas Matias' Instagram" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="Resume/NicholasMatias_12.12.23.pdf" title="View my resume..." target="_blank" class="button button2">View my resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message"   rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="button button2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © CBN, Creations by Nick</p>
+            </div>
+
+        </div>
+
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-250px";
+            }
+        </script>
+
+        <script src="https://kit.fontawesome.com/3775ce8ebb.js" crossorigin="anonymous"></script>
+
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwRs4W5-hiStyMZ_ds3FZZinqJrYgSci_JqlC1NYA4y55w1ElPy__0CcLO_DS44-p4P/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>
