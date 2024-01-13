@@ -195,6 +195,11 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
+    transition: .5s;
+    
+}
+.layer a:hover{
+    font-size: 22px;
 }
 .work:hover img{
     transform: scale(1.1);
@@ -217,6 +222,7 @@ nav ul li a:hover::after{
 }
 .button:hover{
     background: #ff004f;
+    border: 1px solid #fff;
 }
 /* Contact */
 .contact-left{
@@ -265,6 +271,7 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
+
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -318,8 +325,8 @@ nav .mobile{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -250px;
-        width: 250px;
+        right: -200px;
+        width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -369,3 +376,26 @@ nav .mobile{
     margin-top: -40px;
     display: block;
 }
+
+#to-top {
+    
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ff004f; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 12px; /* Increase font size */
+    transition: .5s;
+  }
+  
+  #to-top:hover {
+    font-size: 15px; 
+    padding: 12px;
+
+  }
