@@ -12,6 +12,12 @@ body{
     color: #fff;
 
 }
+.resume-button{
+    transform: translateY(-40px);
+}
+.new-website{
+    transform: translateY(90px);
+}
 #header{
     width: 100%;
     height: 100vh;
